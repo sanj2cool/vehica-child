@@ -18,41 +18,53 @@ global $vehicaCurrentWidget;
 	display:none !important;
 }
 </style>
-<div style="background:#edf8fe; width:100%; padding:50px 0px;">
-<div class="vehica-container">
-<div class="vehica-car-form">
- <div class="vehica-car-form__inner">
-	<div style="display:flex;align-items:center;" class="row" style="padding:30px 0px;">
-		<div>
-		<h2 style="font-size:50px;font-weight:bold;margin-bottom:0px;">List today your <span style="color:#fcb500;transition: opacity 0.5s ease-in-out;" id="changing-text" class="moving">Car </span></h2>
-		<p style="
-    font-family: 'Roboto';
-    font-size: 24px;
-    width: 629px;
-">It's fast, easy, safe and you'll reach the right audience looking for a travel car!
-		</p>
-		<button style="
-    padding: 10px 32px;
-    font-size: 21px;
-    font-family: 'Roboto' !important;!i;!;!u;!um;!u;!;
-    line-height: 28px;
-    background: #fcb500;
-    border: none;
-    border-radius: 11px;
-    color: #222;
-    margin-top: 15px;
-	font-weight: 800;
-">List your car now ! </button>
-		</div>
-		
-		<div>
-		<img src="http://travelcar.test/carss.png"/>
-		</div>
-	</div>
- 
- </div>
- 
- </div>  </div> </div> 
+<div style = "background:#edf8fe; width:100%; padding:50px 0px;" > 
+   <div class="vehica-container">
+    <div class="vehica-car-form">
+        <div class="vehica-car-form__inner">
+            <div style="padding:30px 0px;display:flex;align-items:center;" class="row">
+                <div>
+                    <h2 style="font-size:50px;font-weight:bold;margin-bottom:0px;">List today your
+                        <span
+                            style="color:#fcb500;transition: opacity 0.5s ease-in-out;"
+                            id="changing-text"
+                            class="moving">Car
+                        </span>
+                    </h2>
+                    <p style=" font-family: 'Roboto';
+                        font-size: 24px;
+                        width: 629px;
+                    ">It's fast, easy, safe and you'll reach the right audience looking for a travel car!
+                                        </p>
+                                        <button
+                                            style="
+                        padding: 10px 32px;
+                        font-size: 21px;
+                        font-family: 'Roboto' !important;!i;!;!u;!um;!u;!;
+                        line-height: 28px;
+                        background: #fcb500;
+                        border: none;
+                        border-radius: 11px;
+                        color: #222;
+                        margin-top: 15px;
+                        font-weight: 800;
+                    ">List your car now !
+                    </button>
+                </div>
+
+                <div>
+                    <img src="http://travelcar.test/carss.png"/>
+                </div>
+            </div>
+            <?php get_template_part('templates/general/panel/achivments'); ?>
+            
+
+        </div>
+
+    </div>
+</div>
+</div>
+<?php get_template_part('templates/general/panel/how_it_work'); ?>
 <div class="vehica-car-form">
     <div class="vehica-car-form__inner">
 
@@ -102,6 +114,7 @@ global $vehicaCurrentWidget;
                         <?php get_template_part('templates/general/panel/select_package'); ?>
                     <?php endif; ?>
                     </div>
+                    <?php get_template_part('templates/general/panel/achivments'); ?>
                     <div class="vehica-car-form__section vehica-car-form__section--create-car">
                         <?php if (!is_user_logged_in()) : ?>
                             <div class="vehica-car-form__section__info-box">

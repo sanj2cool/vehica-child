@@ -8,7 +8,7 @@
         }
         
         wp_enqueue_style('vehica', get_template_directory_uri() . '/style.css', $deps, VEHICA_VERSION);
-        wp_enqueue_style('vehica-child', get_stylesheet_directory_uri() . '/style.css', ['vehica']);
+        wp_enqueue_style('vehica-child', get_stylesheet_directory_uri() . '/style.css?ver=6.7.2777');
     });
     
     add_action('after_setup_theme', static function () {
