@@ -41,49 +41,7 @@ Text Domain: vehica
 .step.active {
     background-color: blue;
 }
-/**
-.choose_package{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-.vehica-package{
-    background: linear-gradient(135deg, #fbcf4b, #FFF);
-    width: 33%;
-}
-.vehica-package__left {
-    padding: 20px 30px;
-    width: 150px;
-    border-right: 1px solid #f2f5fb;
-}
-.vehica-package__right {
-    padding: 10px 30px 30px;
-}
-.vehica-package__radio{
-    align-self: end;
-    margin-bottom: 5px;
-    margin-right: 5px;
-}
-.vehica-package-new__label {
-    background: #070707;
-    border-radius: 5px;
-    font-size: 14px;
-    line-height: 18px;
-    padding: 2px 10px;
-    font-weight: 800;
-    position: absolute;
-    top: -35px;
-    left: -3px;
-    color: #fff;
-}
 
-#changing-text {
-    font-weight: bold;
-    color: #ff6600;
-    transition: opacity 0.5s ease-in-out;
-}
-
-**/
 
 .achivements .achive h3 {
 	font-weight:bold;
