@@ -126,3 +126,17 @@ Text Domain: vehica
 .sell-button:hover {
     background-color: #e6b800;
 }
+
+.vehica-package {
+    border-radius: 10px;
+    background: #F8F9FA;
+    box-shadow: 0 7px 5px 0 rgba(0, 0, 0, 0.1);
+    display: flex
+;
+    width: 100%;
+    margin-bottom: 21px;
+    position: relative;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+    transition: all 0.2s ease;
+}

@@ -114,7 +114,7 @@ global $vehicaCurrentWidget;
                         <?php get_template_part('templates/general/panel/select_package'); ?>
                     <?php endif; ?>
                     </div>
-                    <?php get_template_part('templates/general/panel/achivments'); ?>
+                  
                     <div class="vehica-car-form__section vehica-car-form__section--create-car">
                         <?php if (!is_user_logged_in()) : ?>
                             <div class="vehica-car-form__section__info-box">
