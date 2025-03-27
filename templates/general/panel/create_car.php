@@ -18,7 +18,7 @@ global $vehicaCurrentWidget;
 	display:none !important;
 }
 </style>
-<div style = "background:#edf8fe; width:100%; padding:50px 0px;" > 
+<div style = "background:#F2F5FB; position:relative; width:100%; padding:50px 0px;" > 
    <div class="vehica-container">
     <div class="vehica-car-form">
         <div class="vehica-car-form__inner">
@@ -226,6 +226,8 @@ global $vehicaCurrentWidget;
                         </div>
                     <?php endif; ?>
 					</div>
+
+                    <div class="tab">
                     <!-- Payment Option -->
                      <template>
                             <div class=" test">
@@ -316,8 +318,13 @@ global $vehicaCurrentWidget;
                         </div>
                     </template>
                     <!-- Payment block end -->
-
+                    </div> <!--tab-->
                     <div class="vehica-car-form__save-submit">
+                    <div class="buttons">
+					<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+					<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+					<button type="submit" id="submitBtn" style="display: none;">Submit</button>
+                    </div>
                         <button
                                 class="vehica-button vehica-button--with-progress-animation"
                                 :class="{'vehica-button--with-progress-animation--active': carForm.disabled, 'vehica-button--with-progress-animation--gallery-in-progress': carForm.inProgress}"
@@ -371,16 +378,13 @@ global $vehicaCurrentWidget;
                             </template>
                         </button>
                     </div>
+                                    
 					<div class="progress">
         <span class="step active"></span>
         <span class="step"></span>
         <span class="step"></span>
     </div>
-					<div class="buttons">
-					<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-					<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-					<button type="submit" id="submitBtn" style="display: none;">Submit</button>
-                    </div>
+					
                 </form>
             </div>
 			 <!-- Navigation Buttons -->
