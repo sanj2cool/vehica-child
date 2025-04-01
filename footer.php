@@ -45,6 +45,7 @@ if (window.location.href.includes("action=create")) {
 	<button class="cspopup">button</button>
     <button onclick="document.getElementById('exitPopup').style.display='none'">Close</button>
 </div>
+
 <?php wp_footer(); ?>
 </body>
 </html>
